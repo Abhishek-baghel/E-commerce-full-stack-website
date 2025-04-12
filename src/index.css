@@ -142,7 +142,28 @@ footer form input::placeholder { font-size: 14px; }
 
 .MuiCheckbox-root{padding:6px !important;}
 
-.zoomProductSliderThumbs .swiper-slide{height: auto !important;}
+.zoomProductSliderThumbs .swiper-wrapper{padding-top: 38px !important;}
 .zoomProductSliderThumbs .swiper-button-next{bottom: 0px !important; right: inherit !important;
 top: inherit !important; width: 100% !important; height: 30px !important; border-radius: 0px !important;}
-.zoomProductSliderThumbs .swiper-button-prev{top: 0px !important; right: inherit !important;}
+.zoomProductSliderThumbs .swiper-button-next:after{transform: rotate(90deg);}
+
+.zoomProductSliderThumbs .swiper-button-prev{top: 20px !important; left: 0 !important; width: 100% !important; height: 30px !important; border-radius: 0px !important;}
+
+.zoomProductSliderThumbs .swiper-button-prev:after{transform: rotate(90deg);}
+
+.zoomProductSliderThumbs .swiper-button-prev,
+.zoomProductSliderThumbs .swiper-button-next {
+  width: 30px;
+  height: 30px;
+  min-width: 30px;
+  background: #ff5252; /* primary color */
+  color: #fff;
+  border-radius: 50%; /* make it round */
+  font-size: 16px; /* smaller icon */
+}
+
+.zoomProductSliderThumbs .swiper-button-prev:hover,
+.zoomProductSliderThumbs .swiper-button-next:hover {
+  background: #fff; /* white on hover */
+  color: #ff5252;   /* primary color icon on hover */
+}
