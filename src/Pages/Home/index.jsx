@@ -7,7 +7,7 @@ import AdsBannerSliderV2 from '../../components/AdsBannerSliderV2';
 
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
-import ProductsSlider from '../../components/ProductsSlider';
+import ProductsSlider from '../../components/ProductsSlider'; 
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
