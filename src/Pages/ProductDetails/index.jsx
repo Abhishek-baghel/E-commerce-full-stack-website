@@ -3,9 +3,13 @@ import Breadcrumbs from "@mui/material/Breadcrumbs";
 import { Link } from 'react-router-dom';
 import ProductZoom from '../../components/ProductZoom';
 import Rating from '@mui/material/Rating';
+import Button from '@mui/material/Button';
+import { useState } from "react";
 
 
 const ProductDetails = () => {
+const [productActionIndex, setProductActionIndex] = useState(null);
+
     return (
        <>
         <div className='!py-5'>
@@ -69,8 +73,14 @@ const ProductDetails = () => {
     <p className='!mt-3 !pr-10 !mb-5'>
     Refresh your casual wardrobe with this trendy blue color block T-shirt. Crafted from premium, breathable cotton, it offers all-day comfort and a relaxed fit. The bold color block design gives it a modern, sporty vibe that's perfect for everyday wear. Ideal for casual outings, weekend getaways, or just chilling at home. Pair it effortlessly with jeans, joggers, or shorts for a laid-back yet stylish look. Durable stitching and high-quality fabric ensure it stays fresh after multiple washes.</p>
       
-      <div className='flex items-center !gap-3'>
+      <div className='flex items-center !gap-3'>  
         <span className='text-[16px]'>Size:</span>
+        <div className="flex items-center gap-1 actions">
+          <Button className={`${productActionIndex === 0 ? '!bg-primary !text-white' : ''}`} onClick={() => setProductActionIndex(0)}>50 ml</Button>
+          <Button className={`${productActionIndex === 1 ? '!bg-primary !text-white' : ''}`} onClick={() => setProductActionIndex(1)}>100 ml</Button>
+          <Button className={`${productActionIndex === 2 ? '!bg-primary !text-white' : ''}`} onClick={() => setProductActionIndex(2)}>150 ml</Button>
+          <Button className={`${productActionIndex === 3 ? '!bg-primary !text-white' : ''}`} onClick={() => setProductActionIndex(3)}>200 ml</Button>
+        </div>
       </div>
       </div>
     

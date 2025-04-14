@@ -176,3 +176,5 @@ top: inherit !important; width: 100% !important; height: 30px !important; border
   background: #fff; /* white on hover */
   color: #ff5252;   /* primary color icon on hover */
 }
+
+.productContent .actions button{min-width: 40px !important; height: 30px !important; border: 1px solid rgba(0,0,0,0.1) !important; color: rgba(0,0,0,0.7) !important;}
