@@ -1,5 +1,4 @@
 import "./App.css";
-
 import { BrowserRouter, Routes, Route } from "react-router-dom"; // ✅ Import Routes also
 import Header from "./components/Header";
 import Footer from './components/Footer';

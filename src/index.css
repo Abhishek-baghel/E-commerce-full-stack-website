@@ -142,6 +142,10 @@ footer form input::placeholder { font-size: 14px; }
 
 .MuiCheckbox-root{padding:6px !important;}
 
+.ReactCollapse--collapse {
+  transition: height 400ms;
+}
+
 .zoomProductSliderThumbs .swiper-wrapper{padding-top: 38px !important;}
 .zoomProductSliderThumbs .swiper-button-next{bottom: 0px !important; right: inherit !important;
 top: inherit !important; width: 100% !important; height: 30px !important; border-radius: 0px !important;}
