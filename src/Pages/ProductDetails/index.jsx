@@ -4,10 +4,6 @@ import { Link } from 'react-router-dom';
 import ProductZoom from '../../components/ProductZoom';
 
 
-
-
-
-
 const ProductDetails = () => {
     return (
        <>

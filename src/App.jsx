@@ -1,5 +1,6 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
+
+import { BrowserRouter, Routes, Route } from "react-router-dom"; // ✅ Import Routes also
 import Header from "./components/Header";
 import Footer from './components/Footer';
 import ProductListing from "./Pages/ProductListing";
@@ -11,12 +12,12 @@ function App() {
     <>
       <BrowserRouter>
         <Header />
-        <Routes>
-          <Route path="/" element={<Home />} /> {/* Removed exact={true} */}
-          <Route path={"/ProductListing"} element={<ProductListing />} /> {/* Removed exact={true} */}
-          <Route path={"/product/:id"} exact={true} element={<ProductDetails/>}/>
+        <Routes> {/* ✅ Wrap Route components inside Routes */}
+          <Route path="/" element={<Home />} />
+          <Route path="/ProductListing" element={<ProductListing />} />
+          <Route path="/product/:id" element={<ProductDetails />} /> {/* ✅ Removed exact={true}, not needed */}
         </Routes>
-        <Footer/>
+        <Footer />
       </BrowserRouter>
     </>
   );
