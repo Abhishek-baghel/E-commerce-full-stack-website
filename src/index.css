@@ -19,9 +19,11 @@ body{
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     background: #f5f0f0;
-    color: rgba(0,0,0,0.9);
+    color: #1e1d1d;
     overflow-x: hidden;
 }
+
+p{font-size: 14px; line-height: 25px ;}
 /*
 .HomeCatSlider {
   padding-top: 1rem !important;
