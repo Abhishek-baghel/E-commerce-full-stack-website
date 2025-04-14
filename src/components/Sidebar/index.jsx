@@ -20,7 +20,7 @@ export const Sidebar = () => {
     return (
         <aside className='sidebar'>
             <div className="box">
-                <h3 className="w-full mb-3 text-[16px] font-[600] flex items-cente pr-5">Shop By Categories
+                <h3 className="w-full !mt-4 !mb-3 text-[16px] font-[600] flex items-cente pr-5">Shop By Categories
                     <Button className="!w-[30px] !h-[30px] !min-w-[30px] !rounded-full !ml-auto !text-[#000]" onClick={()=>setIsOpenCategoryFilter(!isOpenCategoryFilter)}>
                         {
                             isOpenCategoryFilter===true? <FaAngleUp/>: <FaAngleDown/>
@@ -62,7 +62,7 @@ export const Sidebar = () => {
             </div>
 
 
-            <div className="box mt-3">
+            <div className="box !mt-3">
                 <h3 className="w-full mb-3 text-[16px] font-[600] flex items-cente pr-5">Ingredient
                     <Button className="!w-[30px] !h-[30px] !min-w-[30px] !rounded-full !ml-auto !text-[#000]" onClick={()=>setIsOpenIngredientFilter(!isOpenIngredientFilter)}>
                         {
@@ -82,22 +82,22 @@ export const Sidebar = () => {
             </div>
 
 
-            <div className="box mt-4">
+            <div className="box !mt-4">
                 <h3 className="w-full !mb-3 text-[16px] font-[600] flex items-cente !pr-5">Fliter By Price
                     
                 </h3>
                 <RangeSlider/>
-                <div className="!mt-3 flex pt-4 pb-2 priceRange">
+                <div className="!mt-3 flex !pt-1 !pb-1  priceRange">
                 <span className="text-[13px]">
                     From: <strong className="text-dark">Rs: {100 }</strong>
                 </span>
-                <span className="m1-auto !pl-17 text-[13px]">
+                <span className="m1-auto !pl-16 text-[13px]">
                     From: <strong className="text-dark">Rs: {5000}</strong>
                 </span>
                 </div>
                 </div>
 
-                <div className="box mt-4">
+                <div className="box !mt-4">
                 <h3 className="w-full !mb-3 text-[16px] font-[600] flex items-cente !pr-5">Fliter By Rating 
                 </h3>
                 

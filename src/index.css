@@ -42,7 +42,7 @@ body{
 .container{width: 95%; margin: auto;}
 
 .btn-org{background: #ff5252 !important; color: #fff !important; font-weight: 500; font-size: 16px; padding: 7px 20px !important;} 
-
+.btn-org:hover{background: #171717 !important;}
 .link:hover{color: #ff5252;}
 
 .MuiBadge-badge{background-color: #ff5252 !important;}
@@ -145,6 +145,9 @@ footer form input::placeholder { font-size: 14px; }
 .ReactCollapse--collapse {
   transition: height 400ms;
 }
+
+.itemViewActions button.active svg{ color: #ff5252 !important; opacity: 1;}
+.Mui-selected.MuiPaginationItem-page{background: #ff5252 !important; color: #fff !important;}
 
 .zoomProductSliderThumbs .swiper-wrapper{padding-top: 38px !important;}
 .zoomProductSliderThumbs .swiper-button-next{bottom: 0px !important; right: inherit !important;
