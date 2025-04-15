@@ -5,6 +5,10 @@ import ProductZoom from '../../components/ProductZoom';
 import Rating from '@mui/material/Rating';
 import Button from '@mui/material/Button';
 import { useState } from "react";
+import { QtyBox } from '../../components/QtyBox';
+import { MdOutlineShoppingCart } from "react-icons/md";
+import { IoGitCompare } from "react-icons/io5";
+import { FaRegHeart } from 'react-icons/fa6';
 
 
 const ProductDetails = () => {
@@ -38,7 +42,7 @@ const [productActionIndex, setProductActionIndex] = useState(null);
         to="/"
         className="link transition !text-[14px]"
       >
-       Blue Color Block T-shirt
+       Modern Blue Color Block Tee
       </Link>
       
     </Breadcrumbs>
@@ -48,14 +52,14 @@ const [productActionIndex, setProductActionIndex] = useState(null);
 
         </div>
         <section className='bg-white !py-5'>
-        <div className='container flex gap-8'>
+        <div className='container flex gap-8 items-center'>
     <div className='productZoomContainer w-[40%]'>
       <ProductZoom/>
         
     </div>
 
-    <div className='productContent w-[60%]'>
-      <h1 className='text-[24px] font-[600] !mb-2'>Blue Color Block T-shirt</h1>
+    <div className='productContent w-[60%] !pr-10'>
+      <h1 className='text-[24px] font-[600] !mb-2'>Modern Blue Color Block Tee – Relaxed Fit</h1>
       <div className='flex items-center gap-3'>
         <span className='text-gray-400 text-[13px]'>Brands : <span className='font-[500] text-black opacity-75'>House of Chikankari</span></span>
       <Rating name="size-small" defaultValue={4} size='small' readOnly/>
@@ -82,6 +86,27 @@ const [productActionIndex, setProductActionIndex] = useState(null);
           <Button className={`${productActionIndex === 3 ? '!bg-primary !text-white' : ''}`} onClick={() => setProductActionIndex(3)}>200 ml</Button>
         </div>
       </div>
+      <p className='tetx-[14px] !mt-4 !mb-2'>Free Shipping (Est. Delivery Time 2-3 Days)</p>
+      <div className='flex items-center gap-4'>
+        <div className='qtyBoxWrapper w-[70px]'>
+        <QtyBox/>
+        </div>
+
+        <Button className='btn-org flex gap-2'><MdOutlineShoppingCart className='text-[22px]' />Add to Cart</Button>
+      </div>
+
+
+
+      <div className="flex items-center gap-4 !mt-4">
+  <span className="flex items-center gap-2 text-[15px] link cursor-pointer font-[500]">
+    <FaRegHeart className='text-[18px]'/> Add to Wishlist
+  </span>
+
+  <span className="flex items-center gap-2 text-[15px] link cursor-pointer font-[500]">
+    <IoGitCompare className='text-[18px]'/> Add to Compare
+  </span>
+</div>
+
       </div>
     
     

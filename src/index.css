@@ -178,3 +178,10 @@ top: inherit !important; width: 100% !important; height: 30px !important; border
 }
 
 .productContent .actions button{min-width: 40px !important; height: 30px !important; border: 1px solid rgba(0,0,0,0.1) !important; color: rgba(0,0,0,0.7) !important;}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
