@@ -1,9 +1,15 @@
 @import "tailwindcss";
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
-@theme {
+:root {
   --color-primary: #ff5252;
   --backgroundColor-primary: #ff5252;
 }
+
+
+
 
 .custom-primary-text {
   color: var(--color-primary);
@@ -23,7 +29,8 @@ body{
     overflow-x: hidden;
 }
 
-p{font-size: 14px; line-height: 25px ;}
+p{font-size: 14px; line-height: 25px; margin-bottom: 10px; margin-top: 10px;}
+h1, h2, h3, h4, h5, h6{font-weight: 600;}
 /*
 .HomeCatSlider {
   padding-top: 1rem !important;
@@ -185,3 +192,7 @@ input[type=number]::-webkit-outer-spin-button {
   -moz-appearance: none;
   appearance: none;
 }
+
+.reviewScroll::-webkit-scrollbar{width: 5px !important;}
+.reviewScroll::-webkit-scrollbar-thumb{background: #ccc !important;}
+
