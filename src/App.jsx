@@ -7,7 +7,8 @@ import ProductListing from "./Pages/ProductListing";
 import Home from "./Pages/Home";
 import ProductDetails from "./Pages/ProductDetails";
 import { createContext } from "react";
-
+import Login from "./Pages/Login";
+import Register from "./Pages/Register";
 import Button from '@mui/material/Button';
 import Dialog from '@mui/material/Dialog';
 import DialogActions from '@mui/material/DialogActions';
@@ -45,6 +46,8 @@ function App() {
           <Route path="/" element={<Home />} /> 
           <Route path={"/ProductListing"} element={<ProductListing />} /> 
           <Route path={"/product/:id"} exact={true} element={<ProductDetails/>}/>
+          <Route path={"/login"} exact={true} element={<Login/>}/>
+          <Route path={"register"} exact={true} element={<Register/>}/>
         </Routes>
         <Footer/>
         </MyContext.Provider>
