@@ -5,6 +5,9 @@ import Footer from './components/Footer';
 import ProductListing from "./Pages/ProductListing";
 import Home from "./Pages/Home";
 import ProductDetails from "./Pages/ProductDetails";
+import Login from "./Pages/Login";
+import Register from "./Pages/Register";
+
 
 function App() {
   return (
@@ -15,6 +18,8 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/ProductListing" element={<ProductListing />} />
           <Route path="/product/:id" element={<ProductDetails />} /> {/* ✅ Removed exact={true}, not needed */}
+          <Route path="/login" exact={true} element={<Login/>} /> {/* ✅ Added a 404 route */}
+          <Route path="/register" exact={true} element={<Register/>} />
         </Routes>
         <Footer />
       </BrowserRouter>
