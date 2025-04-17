@@ -1,9 +1,11 @@
-import { Button, Rating } from "@mui/material";
+import { Rating } from "@mui/material";
 import React, { useState } from "react";
 import { QtyBox } from "../QtyBox";
 import { MdOutlineShoppingCart } from "react-icons/md";
 import { FaRegHeart } from "react-icons/fa";
 import { IoGitCompare } from "react-icons/io5";
+import Button from "@mui/material/Button";   
+
 
 export const ProductDetailsComponent = () => {
     const [productActionIndex, setProductActionIndex] = useState(null);

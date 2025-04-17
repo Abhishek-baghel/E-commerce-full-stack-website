@@ -17,26 +17,25 @@ import DialogContentText from '@mui/material/DialogContentText';
 import DialogTitle from '@mui/material/DialogTitle';
 import ProductZoom from "./components/ProductZoom";
 import { IoMdClose } from "react-icons/io";
+import ProductDetailsComponent from "./components/ProductDetails";
 
 const MyContext = createContext();
 
 function App() {
 
-  const [openProductsDetailsModal , setOpenProductsDetailsModal] = useState(true);
+  const [openProductsDetailsModal , setOpenProductsDetailsModal] = useState(false);
   const [maxWidth, setMaxWidth] = React.useState('lg');
   const [fullWidth, setFullWidth] = React.useState(true);
 
-  const handleClickOpenProductsDetailsModal = () => {
-    setOpenProductsDetailsModal(true);
-  };
+
 
   const handleCloseProductsDetailsModal = () => {
     setOpenProductsDetailsModal(false);
   };
 
   const values = {
-
-  }
+    setOpenProductsDetailsModal
+  };
   return (
     <>
       <BrowserRouter>
@@ -67,10 +66,15 @@ function App() {
         <DialogContent>
           <div className='flex place-items-center w-full productDetilsModalContainer relative'>
             <Button className="!w-[40px] !h-[40px] !min-w-[40px] !rounded-full !text-[#000]
-            !absolute top-[0px] right-[0px]" onClick={handleCloseProductsDetailsModal}><IoMdClose/></Button>
-            <div className="col1 w-[40%]">
+            !absolute  !pb-5  top-[15px] right-[15px] !bg-[#f1f1f1]" onClick={handleCloseProductsDetailsModal}><IoMdClose className="text-[20px]"/></Button>
+            <div className="col1 w-[40%] !px-3">
              <ProductZoom/>
             </div>
+
+            <div className="col2 w-[60%] !py-8 !px-8 !pr-16 productContent ">
+               <ProductDetailsComponent/>
+            </div>
+
           </div>
           
         </DialogContent>
@@ -81,4 +85,6 @@ function App() {
 }
 
 export default App;
+
+export {MyContext}
 
