@@ -17,25 +17,36 @@ import DialogContentText from '@mui/material/DialogContentText';
 import DialogTitle from '@mui/material/DialogTitle';
 import ProductZoom from "./components/ProductZoom";
 import { IoMdClose } from "react-icons/io";
+import CartPage from "./Pages/Cart";
+import Checkout from "./Pages/Checkout";
 import ProductDetailsComponent from "./components/ProductDetails";
+import MyList from "./Pages/MyList";
 
 const MyContext = createContext();
 
 function App() {
-
+  
+ 
   const [openProductsDetailsModal , setOpenProductsDetailsModal] = useState(false);
   const [maxWidth, setMaxWidth] = React.useState('lg');
   const [fullWidth, setFullWidth] = React.useState(true);
-
+  const [openCartPanel, setOpenCartPanel] = useState(false);
 
 
   const handleCloseProductsDetailsModal = () => {
     setOpenProductsDetailsModal(false);
   };
 
-  const values = {
-    setOpenProductsDetailsModal
+  const toggleCartPanel = (newOpen) => () => {
+    setOpenCartPanel(newOpen);
   };
+
+  const values = {
+    setOpenCartPanel,
+    openCartPanel,
+    toggleCartPanel,
+    setOpenProductsDetailsModal,
+  }
   return (
     <>
       <BrowserRouter>
@@ -46,7 +57,10 @@ function App() {
           <Route path={"/ProductListing"} element={<ProductListing />} /> 
           <Route path={"/product/:id"} exact={true} element={<ProductDetails/>}/>
           <Route path={"/login"} exact={true} element={<Login/>}/>
-          <Route path={"register"} exact={true} element={<Register/>}/>
+          <Route path={"/register"} exact={true} element={<Register/>}/>
+          <Route path={"/cart"} exact={true} element={<CartPage/>}/>
+          <Route path={"/checkout"} exact={true} element={<Checkout/>}/>
+          <Route path={"/my-list"} exact={true} element={<MyList/>}/>
         </Routes>
         <Footer/>
         </MyContext.Provider>
@@ -80,11 +94,13 @@ function App() {
         </DialogContent>
        
       </Dialog>
+
+      
+
     </>
   );
 }
 
 export default App;
 
-export {MyContext}
-
+export {MyContext};
