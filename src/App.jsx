@@ -21,16 +21,21 @@ import CartPage from "./Pages/Cart";
 import Checkout from "./Pages/Checkout";
 import ProductDetailsComponent from "./components/ProductDetails";
 import MyList from "./Pages/MyList";
+import Verify from "./Pages/Verify";
+import toast, { Toaster } from 'react-hot-toast';
+import ForgotPassword from './Pages/ForgotPassword';
+
 
 const MyContext = createContext();
 
 function App() {
   
- 
+  
   const [openProductsDetailsModal , setOpenProductsDetailsModal] = useState(false);
   const [maxWidth, setMaxWidth] = React.useState('lg');
   const [fullWidth, setFullWidth] = React.useState(true);
   const [openCartPanel, setOpenCartPanel] = useState(false);
+  const [isLogin, SetIsLogin] = React.useState(false);
 
 
   const handleCloseProductsDetailsModal = () => {
@@ -40,12 +45,24 @@ function App() {
   const toggleCartPanel = (newOpen) => () => {
     setOpenCartPanel(newOpen);
   };
+  const openAlertBox = ({ status, msg }) => {
+    if (status === "success") {
+      toast.success(msg);
+    }
+
+    if (status === "error") {
+      toast.error(msg);
+    }
+  };
 
   const values = {
     setOpenCartPanel,
     openCartPanel,
     toggleCartPanel,
     setOpenProductsDetailsModal,
+    openAlertBox,
+    isLogin,
+    SetIsLogin,
   }
   return (
     <>
@@ -61,10 +78,14 @@ function App() {
           <Route path={"/cart"} exact={true} element={<CartPage/>}/>
           <Route path={"/checkout"} exact={true} element={<Checkout/>}/>
           <Route path={"/my-list"} exact={true} element={<MyList/>}/>
+          
+          <Route path={"/verify"} exact={true} element={<Verify/>}/>
+          <Route path={"/forgot-password"} exact={true} element={<ForgotPassword/>}/>
         </Routes>
         <Footer/>
         </MyContext.Provider>
       </BrowserRouter>
+      <Toaster/>
       <Dialog
         fullWidth={fullWidth}
         maxWidth={maxWidth}
@@ -94,7 +115,7 @@ function App() {
         </DialogContent>
        
       </Dialog>
-
+  
       
 
     </>

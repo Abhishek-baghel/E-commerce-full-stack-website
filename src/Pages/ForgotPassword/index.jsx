@@ -70,12 +70,14 @@ const ForgotPassword = () => {
             </div>
 
             {/* Forgot Password Click */}
-            <a
-              className="link cursor-pointer !text-[14px] !font-[600]"
-              onClick={forgotPassword}
-            >
-              Forget Password
-            </a>
+            <button
+  type="button"
+  className="link cursor-pointer !text-[14px] !font-[600] bg-transparent border-none p-0"
+  onClick={forgotPassword}
+>
+  Forget Password
+</button>
+
 
             {/* Login Button */}
             <div className="flex items-center !w-full !mt-3 !mb-3">
