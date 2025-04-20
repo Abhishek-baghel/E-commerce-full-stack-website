@@ -5,10 +5,7 @@ import ProductZoom from '../../components/ProductZoom';
 import Rating from '@mui/material/Rating';
 import Button from '@mui/material/Button';
 import { useState } from "react";
-import { QtyBox } from '../../components/QtyBox';
-import { MdOutlineShoppingCart } from "react-icons/md";
-import { IoGitCompare } from "react-icons/io5";
-import { FaRegHeart } from 'react-icons/fa6';
+
 import TextField from '@mui/material/TextField';
 import ProductsSlider from '../../components/ProductsSlider';
 import { ProductDetailsComponent } from '../../components/ProductDetails';
@@ -217,76 +214,106 @@ const [activeTab, setActiveTab] = useState(0);
 
       {
         activeTab === 2 && (
-        <div className="!shadow-md !w-[80%] !py-5 !px-8 rounded-md">
-        <div className="w-full productReviewsContainer">
-          <h2 className="text-[18px]">Customer questions & answers</h2>
-
-          
-            <div className="review !pt-5 !pb-5 !border-b !border-[rgba(0,0,0,0.1)] !w-full flex items-center justify-between">
-            <div className="info w-[60%] flex items-center gap-3">
-              <div className="img w-[80px] h-[80px] overflow-hidden rounded-full">
-                <img src="https://png.pngtree.com/png-vector/20190710/ourmid/pngtree-user-vector-avatar-png-image_1541962.jpg" className="w-full"/>
+          <div className="!shadow-md !w-[80%] !py-5 !px-8 rounded-md">
+          <div className="w-full productReviewsContainer">
+            <h2 className="text-[18px]">Customer questions & answers</h2>
+        
+            {/* Scrollable Reviews Wrapper Start */}
+            <div style={{ maxHeight: '400px', overflowY: 'auto' }}>
+              <div className="review !pt-5 !pb-5 !border-b !border-[rgba(0,0,0,0.1)] !w-full flex items-center justify-between">
+                <div className="info w-[60%] flex items-center gap-3">
+                  <div className="img w-[80px] h-[80px] overflow-hidden rounded-full">
+                    <img src="https://png.pngtree.com/png-vector/20190710/ourmid/pngtree-user-vector-avatar-png-image_1541962.jpg" className="w-full" />
+                  </div>
+                  <div className="w-[80%]">
+                    <h4 className="text-[16px]">Rinku Verma</h4>
+                    <h5 className="text-[13px] !mb-0">2025-02-22</h5>
+                    <p className="!mt-0 !mb-0">Lorem Ipsum is simply dummy text...</p>
+                  </div>
+                </div>
+                <Rating name="size-small" defaultValue={4} size='small' readOnly />
               </div>
-              <div className="w-[80%]">
-                <h4 className="text-[16px]">Rinku Verma</h4>
-                <h5 className="text-[13px] !mb-0">2025-02-22</h5>
-                <p className="!mt-0 !mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+        
+              <div className="review !pt-5 !pb-5 !border-b !border-[rgba(0,0,0,0.1)] !w-full flex items-center justify-between">
+                <div className="info w-[60%] flex items-center gap-3">
+                  <div className="img w-[80px] h-[80px] overflow-hidden rounded-full">
+                    <img src="https://png.pngtree.com/png-vector/20190710/ourmid/pngtree-user-vector-avatar-png-image_1541962.jpg" className="w-full" />
+                  </div>
+                  <div className="w-[80%]">
+                    <h4 className="text-[16px]">Rinku Verma</h4>
+                    <h5 className="text-[13px] !mb-0">2025-02-22</h5>
+                    <p className="!mt-0 !mb-0">Lorem Ipsum is simply dummy text...</p>
+                  </div>
+                </div>
+                <Rating name="size-small" defaultValue={4} size='small' readOnly />
+              </div>
+        
+              <div className="review !pt-5 !pb-5 !border-b !border-[rgba(0,0,0,0.1)] !w-full flex items-center justify-between">
+                <div className="info w-[60%] flex items-center gap-3">
+                  <div className="img w-[80px] h-[80px] overflow-hidden rounded-full">
+                    <img src="https://png.pngtree.com/png-vector/20190710/ourmid/pngtree-user-vector-avatar-png-image_1541962.jpg" className="w-full" />
+                  </div>
+                  <div className="w-[80%]">
+                    <h4 className="text-[16px]">Rinku Verma</h4>
+                    <h5 className="text-[13px] !mb-0">2025-02-22</h5>
+                    <p className="!mt-0 !mb-0">Lorem Ipsum is simply dummy text...</p>
+                  </div>
+                </div>
+                <Rating name="size-small" defaultValue={4} size='small' readOnly />
+              </div>
+        
+              <div className="review !pt-5 !pb-5 !border-b !border-[rgba(0,0,0,0.1)] !w-full flex items-center justify-between">
+                <div className="info w-[60%] flex items-center gap-3">
+                  <div className="img w-[80px] h-[80px] overflow-hidden rounded-full">
+                    <img src="https://png.pngtree.com/png-vector/20190710/ourmid/pngtree-user-vector-avatar-png-image_1541962.jpg" className="w-full" />
+                  </div>
+                  <div className="w-[80%]">
+                    <h4 className="text-[16px]">Rinku Verma</h4>
+                    <h5 className="text-[13px] !mb-0">2025-02-22</h5>
+                    <p className="!mt-0 !mb-0">Lorem Ipsum is simply dummy text...</p>
+                  </div>
+                </div>
+                <Rating name="size-small" defaultValue={4} size='small' readOnly />
+              </div>
+        
+              <div className="review !pt-5 !pb-5 !border-b !border-[rgba(0,0,0,0.1)] !w-full flex items-center justify-between">
+                <div className="info w-[60%] flex items-center gap-3">
+                  <div className="img w-[80px] h-[80px] overflow-hidden rounded-full">
+                    <img src="https://png.pngtree.com/png-vector/20190710/ourmid/pngtree-user-vector-avatar-png-image_1541962.jpg" className="w-full" />
+                  </div>
+                  <div className="w-[80%]">
+                    <h4 className="text-[16px]">Rinku Verma</h4>
+                    <h5 className="text-[13px] !mb-0">2025-02-22</h5>
+                    <p className="!mt-0 !mb-0">Lorem Ipsum is simply dummy text...</p>
+                  </div>
+                </div>
+                <Rating name="size-small" defaultValue={4} size='small' readOnly />
               </div>
             </div>
-            <Rating name="size-small" defaultValue={4} size='small' readOnly/>
-            </div>
-
-            <div className="review !pt-5 !pb-5 !border-b !border-[rgba(0,0,0,0.1)] !w-full flex items-center justify-between">
-            <div className="info w-[60%] flex items-center gap-3">
-              <div className="img w-[80px] h-[80px] overflow-hidden rounded-full">
-                <img src="https://png.pngtree.com/png-vector/20190710/ourmid/pngtree-user-vector-avatar-png-image_1541962.jpg" className="w-full"/>
-              </div>
-              <div className="w-[80%]">
-                <h4 className="text-[16px]">Rinku Verma</h4>
-                <h5 className="text-[13px] !mb-0">2025-02-22</h5>
-                <p className="!mt-0 !mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-              </div>
-            </div>
-            <Rating name="size-small" defaultValue={4} size='small' readOnly/>
-            </div>
-
-            <div className="review !pt-5 !pb-5 !border-b !border-[rgba(0,0,0,0.1)] !w-full flex items-center justify-between">
-            <div className="info w-[60%] flex items-center gap-3">
-              <div className="img w-[80px] h-[80px] overflow-hidden rounded-full">
-                <img src="https://png.pngtree.com/png-vector/20190710/ourmid/pngtree-user-vector-avatar-png-image_1541962.jpg" className="w-full"/>
-              </div>
-              <div className="w-[80%]">
-                <h4 className="text-[16px]">Rinku Verma</h4>
-                <h5 className="text-[13px] !mb-0">2025-02-22</h5>
-                <p className="!mt-0 !mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-              </div>
-            </div>
-            <Rating name="size-small" defaultValue={4} size='small' readOnly/>
-            </div>
-
-
-            <br/>
+            {/* Scrollable Reviews Wrapper End */}
+        
+            <br />
+        
             <div className="Review Form bg-[#fafafa] !p-4 !rounded-md">
               <h2 className="!text-[18px]">Add a Review</h2>
-
+        
               <form className="!w-full !mt-5">
-              <TextField
-                id="outlined-multiline-flexible"
-                label="Write a Review..."
-                className="!w-full"
-                multiline
-                rows={5}
+                <TextField
+                  id="outlined-multiline-flexible"
+                  label="Write a Review..."
+                  className="!w-full"
+                  multiline
+                  rows={5}
                 />
-                <br/> <br/>
-              <Rating name="size-small" defaultValue={4} size='small'/>
-
-              <div className="flex items-center !mt-5">
-                <Button className="btn-org">Submit Review</Button>
-              </div>
+                <br /><br />
+                <Rating name="size-small" defaultValue={4} size='small' />
+                <div className="flex items-center !mt-5">
+                  <Button className="btn-org">Submit Review</Button>
+                </div>
               </form>
-
             </div>
-            
+          
+        
 
           
         </div>

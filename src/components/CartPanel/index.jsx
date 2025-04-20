@@ -7,100 +7,120 @@ const CartPanel = () => {
   return (
     <>
     <div className="scroll !w-full !max-h-[300px] overflow-y-scroll overflow-x-hidden !py-3 !px-4">
-              <div className="cartItem !w-full flex items-center gap-4 !border-b border-[rgba(0,0,0,0.1)] !pb-4">
-                <div className="img !w-[25%] overflow-hidden h-[80px] rounded-md">
-                  <Link to="/product/45875" className="block group"></Link>
-                  <img src="https://mancode.co.in/cdn/shop/files/Facial_foam_face_wash.jpg?v=1729254017" className="!w-full !group-hover:scale-105"/>
-                  
-                  <Link/>
-                </div>
-                <div className="info !w-[75%] !pr-5 relative"> 
-                  <h4 className="!text-[14px] !font-[500] !pr-2"><Link to="/product/5485" className="link transition-all"> ManCare Facial Fash Wash(Acne Removel)</Link></h4>
-                  <p className="flex items-center gap-5 !mt-2 !mb-2">
-                      <span>Qty : <span>2</span></span>
-                      <span className="!text-primary !font-bold">Price : $25</span>
-                  </p>
+    <div className="cartItem !w-full flex items-center gap-4 !border-b border-[rgba(0,0,0,0.1)] !pb-4">
+  <div className="img !w-[25%] overflow-hidden h-[80px] rounded-md">
+    <Link to="/product/45875" className="block group">
+      <img
+        src="https://mancode.co.in/cdn/shop/files/Facial_foam_face_wash.jpg?v=1729254017"
+        className="!w-full transition-transform duration-300 group-hover:scale-105"
+      />
+    </Link>
+  </div>
+  <div className="info !w-[75%] !pr-5 relative"> 
+    <h4 className="!text-[14px] !font-[500] !pr-2">
+      <Link to="/product/5485" className="link transition-all">
+        ManCare Facial Face Wash (Acne Removal)
+      </Link>
+    </h4>
+    <p className="flex items-center gap-5 !mt-2 !mb-2">
+      <span>Qty : <span>2</span></span>
+      <span className="!text-primary !font-bold">Price : $25</span>
+    </p>
+    <RiDeleteBin6Line className="!absolute !top-[10px] !right-[10px] cursor-pointer !text-[20px] link transition-all"/>
+  </div>
+</div>
 
-                  <RiDeleteBin6Line  className="!absolute !top-[10px] !right-[10px] cursor-pointer !text-[20px] link transition-all"/>
+<div className="cartItem !w-full flex items-center gap-4 !border-b border-[rgba(0,0,0,0.1)] !pb-4">
+  <div className="img !w-[25%] overflow-hidden h-[80px] rounded-md">
+    <Link to="/product/45875" className="block group">
+      <img
+        src="https://mancode.co.in/cdn/shop/files/Facial_foam_face_wash.jpg?v=1729254017"
+        className="!w-full transition-transform duration-300 group-hover:scale-105"
+      />
+    </Link>
+  </div>
+  <div className="info !w-[75%] !pr-5 relative"> 
+    <h4 className="!text-[14px] !font-[500] !pr-2">
+      <Link to="/product/5485" className="link transition-all">
+        ManCare Facial Face Wash (Acne Removal)
+      </Link>
+    </h4>
+    <p className="flex items-center gap-5 !mt-2 !mb-2">
+      <span>Qty : <span>2</span></span>
+      <span className="!text-primary !font-bold">Price : $25</span>
+    </p>
+    <RiDeleteBin6Line className="!absolute !top-[10px] !right-[10px] cursor-pointer !text-[20px] link transition-all"/>
+  </div>
+</div>
 
-                </div>
-              </div>
+<div className="cartItem !w-full flex items-center gap-4 !border-b border-[rgba(0,0,0,0.1)] !pb-4">
+  <div className="img !w-[25%] overflow-hidden h-[80px] rounded-md">
+    <Link to="/product/45875" className="block group">
+      <img
+        src="https://mancode.co.in/cdn/shop/files/Facial_foam_face_wash.jpg?v=1729254017"
+        className="!w-full transition-transform duration-300 group-hover:scale-105"
+      />
+    </Link>
+  </div>
+  <div className="info !w-[75%] !pr-5 relative"> 
+    <h4 className="!text-[14px] !font-[500] !pr-2">
+      <Link to="/product/5485" className="link transition-all">
+        ManCare Facial Face Wash (Acne Removal)
+      </Link>
+    </h4>
+    <p className="flex items-center gap-5 !mt-2 !mb-2">
+      <span>Qty : <span>2</span></span>
+      <span className="!text-primary !font-bold">Price : $25</span>
+    </p>
+    <RiDeleteBin6Line className="!absolute !top-[10px] !right-[10px] cursor-pointer !text-[20px] link transition-all"/>
+  </div>
+</div>
 
-              <div className="cartItem !w-full flex items-center gap-4 !border-b border-[rgba(0,0,0,0.1)] !pb-4">
-                <div className="img !w-[25%] overflow-hidden h-[80px] rounded-md">
-                  <Link to="/product/45875" className="block group"></Link>
-                  <img src="https://mancode.co.in/cdn/shop/files/Facial_foam_face_wash.jpg?v=1729254017" className="!w-full !group-hover:scale-105"/>
-                  
-                  <Link/>
-                </div>
-                <div className="info !w-[75%] !pr-5 relative"> 
-                  <h4 className="!text-[14px] !font-[500] !pr-2"><Link to="/product/5485" className="link transition-all"> ManCare Facial Fash Wash(Acne Removel)</Link></h4>
-                  <p className="flex items-center gap-5 !mt-2 !mb-2">
-                      <span>Qty : <span>2</span></span>
-                      <span className="!text-primary !font-bold">Price : $25</span>
-                  </p>
+<div className="cartItem !w-full flex items-center gap-4 !border-b border-[rgba(0,0,0,0.1)] !pb-4">
+  <div className="img !w-[25%] overflow-hidden h-[80px] rounded-md">
+    <Link to="/product/45875" className="block group">
+      <img
+        src="https://mancode.co.in/cdn/shop/files/Facial_foam_face_wash.jpg?v=1729254017"
+        className="!w-full transition-transform duration-300 group-hover:scale-105"
+      />
+    </Link>
+  </div>
+  <div className="info !w-[75%] !pr-5 relative"> 
+    <h4 className="!text-[14px] !font-[500] !pr-2">
+      <Link to="/product/5485" className="link transition-all">
+        ManCare Facial Face Wash (Acne Removal)
+      </Link>
+    </h4>
+    <p className="flex items-center gap-5 !mt-2 !mb-2">
+      <span>Qty : <span>2</span></span>
+      <span className="!text-primary !font-bold">Price : $25</span>
+    </p>
+    <RiDeleteBin6Line className="!absolute !top-[10px] !right-[10px] cursor-pointer !text-[20px] link transition-all"/>
+  </div>
+</div>
 
-                  <RiDeleteBin6Line  className="!absolute !top-[10px] !right-[10px] cursor-pointer !text-[20px] link transition-all"/>
-
-                </div>
-              </div>
-
-              <div className="cartItem !w-full flex items-center gap-4 !border-b border-[rgba(0,0,0,0.1)] !pb-4">
-                <div className="img !w-[25%] overflow-hidden h-[80px] rounded-md">
-                  <Link to="/product/45875" className="block group"></Link>
-                  <img src="https://mancode.co.in/cdn/shop/files/Facial_foam_face_wash.jpg?v=1729254017" className="!w-full !group-hover:scale-105"/>
-                  
-                  <Link/>
-                </div>
-                <div className="info !w-[75%] !pr-5 relative"> 
-                  <h4 className="!text-[14px] !font-[500] !pr-2"><Link to="/product/5485" className="link transition-all"> ManCare Facial Fash Wash(Acne Removel)</Link></h4>
-                  <p className="flex items-center gap-5 !mt-2 !mb-2">
-                      <span>Qty : <span>2</span></span>
-                      <span className="!text-primary !font-bold">Price : $25</span>
-                  </p>
-
-                  <RiDeleteBin6Line  className="!absolute !top-[10px] !right-[10px] cursor-pointer !text-[20px] link transition-all"/>
-
-                </div>
-              </div>
-
-              <div className="cartItem !w-full flex items-center gap-4 !border-b border-[rgba(0,0,0,0.1)] !pb-4">
-                <div className="img !w-[25%] overflow-hidden h-[80px] rounded-md">
-                  <Link to="/product/45875" className="block group"></Link>
-                  <img src="https://mancode.co.in/cdn/shop/files/Facial_foam_face_wash.jpg?v=1729254017" className="!w-full !group-hover:scale-105"/>
-                  
-                  <Link/>
-                </div>
-                <div className="info !w-[75%] !pr-5 relative"> 
-                  <h4 className="!text-[14px] !font-[500] !pr-2"><Link to="/product/5485" className="link transition-all"> ManCare Facial Fash Wash(Acne Removel)</Link></h4>
-                  <p className="flex items-center gap-5 !mt-2 !mb-2">
-                      <span>Qty : <span>2</span></span>
-                      <span className="!text-primary !font-bold">Price : $25</span>
-                  </p>
-
-                  <RiDeleteBin6Line  className="!absolute !top-[10px] !right-[10px] cursor-pointer !text-[20px] link transition-all"/>
-
-                </div>
-              </div>
-
-              <div className="cartItem !w-full flex items-center gap-4 !border-b border-[rgba(0,0,0,0.1)] !pb-4">
-                <div className="img !w-[25%] overflow-hidden h-[80px] rounded-md">
-                  <Link to="/product/45875" className="block group"></Link>
-                  <img src="https://mancode.co.in/cdn/shop/files/Facial_foam_face_wash.jpg?v=1729254017" className="!w-full !group-hover:scale-105"/>
-                  
-                  <Link/>
-                </div>
-                <div className="info !w-[75%] !pr-5 relative"> 
-                  <h4 className="!text-[14px] !font-[500] !pr-2"><Link to="/product/5485" className="link transition-all"> ManCare Facial Fash Wash(Acne Removel)</Link></h4>
-                  <p className="flex items-center gap-5 !mt-2 !mb-2">
-                      <span>Qty : <span>2</span></span>
-                      <span className="!text-primary !font-bold">Price : $25</span>
-                  </p>
-
-                  <RiDeleteBin6Line  className="!absolute !top-[10px] !right-[10px] cursor-pointer !text-[20px] link transition-all"/>
-
-                </div>
-              </div>
+<div className="cartItem !w-full flex items-center gap-4 !border-b border-[rgba(0,0,0,0.1)] !pb-4">
+  <div className="img !w-[25%] overflow-hidden h-[80px] rounded-md">
+    <Link to="/product/45875" className="block group">
+      <img
+        src="https://mancode.co.in/cdn/shop/files/Facial_foam_face_wash.jpg?v=1729254017"
+        className="!w-full transition-transform duration-300 group-hover:scale-105"
+      />
+    </Link>
+  </div>
+  <div className="info !w-[75%] !pr-5 relative"> 
+    <h4 className="!text-[14px] !font-[500] !pr-2">
+      <Link to="/product/5485" className="link transition-all">
+        ManCare Facial Face Wash (Acne Removal)
+      </Link>
+    </h4>
+    <p className="flex items-center gap-5 !mt-2 !mb-2">
+      <span>Qty : <span>2</span></span>
+      <span className="!text-primary !font-bold">Price : $25</span>
+    </p>
+    <RiDeleteBin6Line className="!absolute !top-[10px] !right-[10px] cursor-pointer !text-[20px] link transition-all"/>
+  </div>
+</div>
 
               <div className="cartItem !w-full flex items-center gap-4 !border-b border-[rgba(0,0,0,0.1)] !pb-4">
                 <div className="img !w-[25%] overflow-hidden h-[80px] rounded-md">

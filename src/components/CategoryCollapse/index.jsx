@@ -5,20 +5,25 @@ import { FiMinusSquare } from "react-icons/fi";
 import { FaRegPlusSquare } from 'react-icons/fa';
 
 export const CategoryCollapse = () => {
-    const [submenuIndex, setSubmenuIndex] = useState(null);
-    const [innersubmenuIndex, setInnerSubmenuIndex] = useState(null);
-
-    const openSubmenu = (newOpen) => {
-        if (submenuIndex === index) {
-            setSubmenuIndex(null);
-        } else {
-            setSubmenuIndex(index);
-        }
-    };
-
-    const openInnerSubmenu = (index) => {
-    };
-
+  const [submenuIndex, setSubmenuIndex] = useState(null);
+  const [innersubmenuIndex, setInnerSubmenuIndex] = useState(null);
+  
+  const openSubmenu = (newIndex) => {
+    if (submenuIndex === newIndex) {
+      setSubmenuIndex(null);
+    } else {
+      setSubmenuIndex(newIndex);
+    }
+  };
+  
+  const openInnerSubmenu = (newIndex) => {
+    if (innersubmenuIndex === newIndex) {
+      setInnerSubmenuIndex(null);
+    } else {
+      setInnerSubmenuIndex(newIndex);
+    }
+  };
+  
 
     return (
         <div className="scroll">
@@ -32,9 +37,9 @@ export const CategoryCollapse = () => {
               </Button>
             </Link>
             {submenuIndex === 0 ? (
-              <FiMinusSquare className="absolute top-[10px] right-[15px] cursor-pointer" onClick={() => toggleSubmenu(0)} />
+              <FiMinusSquare className="absolute top-[10px] right-[15px] cursor-pointer" onClick={() => openSubmenu(0)} />
             ) : (
-              <FaRegPlusSquare className="absolute top-[10px] right-[15px] cursor-pointer" onClick={() => toggleSubmenu(0)} />
+              <FaRegPlusSquare className="absolute top-[10px] right-[15px] cursor-pointer" onClick={() => openSubmenu(0)} />
             )}
 
             {submenuIndex === 0 && (
@@ -46,9 +51,9 @@ export const CategoryCollapse = () => {
                     </Button>
                   </Link>
                   {innersubmenuIndex === 0 ? (
-                    <FiMinusSquare className="absolute top-[10px] right-[15px] cursor-pointer" onClick={() => toggleInnerSubmenu(0)} />
+                    <FiMinusSquare className="absolute top-[10px] right-[15px] cursor-pointer" onClick={() => openInnerSubmenu(0)} />
                   ) : (
-                    <FaRegPlusSquare className="absolute top-[10px] right-[15px] cursor-pointer" onClick={() => toggleInnerSubmenu(0)} />
+                    <FaRegPlusSquare className="absolute top-[10px] right-[15px] cursor-pointer" onClick={() => openInnerSubmenu(0)} />
                   )}
 
                   {innersubmenuIndex === 0 && (
@@ -87,9 +92,9 @@ export const CategoryCollapse = () => {
               </Button>
             </Link>
             {submenuIndex === 1 ? (
-              <FiMinusSquare className="absolute top-[10px] right-[15px] cursor-pointer" onClick={() => toggleSubmenu(1)} />
+              <FiMinusSquare className="absolute top-[10px] right-[15px] cursor-pointer" onClick={() => openSubmenu(1)} />
             ) : (
-              <FaRegPlusSquare className="absolute top-[10px] right-[15px] cursor-pointer" onClick={() => toggleSubmenu(1)} />
+              <FaRegPlusSquare className="absolute top-[10px] right-[15px] cursor-pointer" onClick={() => openSubmenu(1)} />
             )}
 
             {submenuIndex === 1 && (
@@ -101,9 +106,9 @@ export const CategoryCollapse = () => {
                     </Button>
                   </Link>
                   {innersubmenuIndex === 1 ? (
-                    <FiMinusSquare className="absolute top-[10px] right-[15px] cursor-pointer" onClick={() => toggleInnerSubmenu(1)} />
+                    <FiMinusSquare className="absolute top-[10px] right-[15px] cursor-pointer" onClick={() => openInnerSubmenu(1)} />
                   ) : (
-                    <FaRegPlusSquare className="absolute top-[10px] right-[15px] cursor-pointer" onClick={() => toggleInnerSubmenu(1)} />
+                    <FaRegPlusSquare className="absolute top-[10px] right-[15px] cursor-pointer" onClick={() => openInnerSubmenu(1)} />
                   )}
 
                   {innersubmenuIndex === 1 && (
@@ -143,9 +148,9 @@ export const CategoryCollapse = () => {
               </Button>
             </Link>
             {submenuIndex === 2 ? (
-              <FiMinusSquare className="absolute top-[10px] right-[15px] cursor-pointer" onClick={() => toggleSubmenu(2)} />
+              <FiMinusSquare className="absolute top-[10px] right-[15px] cursor-pointer" onClick={() => openSubmenu(2)} />
             ) : (
-              <FaRegPlusSquare className="absolute top-[10px] right-[15px] cursor-pointer" onClick={() => toggleSubmenu(2)} />
+              <FaRegPlusSquare className="absolute top-[10px] right-[15px] cursor-pointer" onClick={() => openSubmenu(2)} />
             )}
 
             {submenuIndex === 2 && (
@@ -157,9 +162,9 @@ export const CategoryCollapse = () => {
                     </Button>
                   </Link>
                   {innersubmenuIndex === 2 ? (
-                    <FiMinusSquare className="absolute top-[10px] right-[15px] cursor-pointer" onClick={() => toggleInnerSubmenu(2)} />
+                    <FiMinusSquare className="absolute top-[10px] right-[15px] cursor-pointer" onClick={() => openInnerSubmenu(2)} />
                   ) : (
-                    <FaRegPlusSquare className="absolute top-[10px] right-[15px] cursor-pointer" onClick={() => toggleInnerSubmenu(2)} />
+                    <FaRegPlusSquare className="absolute top-[10px] right-[15px] cursor-pointer" onClick={() => openInnerSubmenu(2)} />
                   )}
 
                   {innersubmenuIndex === 2 && (
@@ -199,9 +204,9 @@ export const CategoryCollapse = () => {
               </Button>
             </Link>
             {submenuIndex === 3 ? (
-              <FiMinusSquare className="absolute top-[10px] right-[15px] cursor-pointer" onClick={() => toggleSubmenu(3)} />
+              <FiMinusSquare className="absolute top-[10px] right-[15px] cursor-pointer" onClick={() => openSubmenu(3)} />
             ) : (
-              <FaRegPlusSquare className="absolute top-[10px] right-[15px] cursor-pointer" onClick={() => toggleSubmenu(3)} />
+              <FaRegPlusSquare className="absolute top-[10px] right-[15px] cursor-pointer" onClick={() => openSubmenu(3)} />
             )}
 
             {submenuIndex === 3 && (
@@ -213,9 +218,9 @@ export const CategoryCollapse = () => {
                     </Button>
                   </Link>
                   {innersubmenuIndex === 3 ? (
-                    <FiMinusSquare className="absolute top-[10px] right-[15px] cursor-pointer" onClick={() => toggleInnerSubmenu(3)} />
+                    <FiMinusSquare className="absolute top-[10px] right-[15px] cursor-pointer" onClick={() => openInnerSubmenu(3)} />
                   ) : (
-                    <FaRegPlusSquare className="absolute top-[10px] right-[15px] cursor-pointer" onClick={() => toggleInnerSubmenu(3)} />
+                    <FaRegPlusSquare className="absolute top-[10px] right-[15px] cursor-pointer" onClick={() => openInnerSubmenu(3)} />
                   )}
 
                   {innersubmenuIndex === 3 && (

@@ -71,16 +71,16 @@ const Header = () => {
 
       <div className="header !py-4 border-b-[1px] border-gray-250">
     <div className="container px-6 flex items-center justify-between">
-        <div className="col1 flex items-center w-[30%] !pl-4">
+        <div className="col1 flex items-center  !w-[40%] !pl-4">
             <Link to={"/"}>
                 <img src="/tikishnutra_resized.png" className="h-12 w-auto" alt="Logo" />
             </Link>
         </div>
 
-        <div className="col2 flex-grow w-[30%]"></div>
+        <div className="col2 flex-grow w-[20%]"></div>
         <Search />
         
-        <div className="col3 w-[50%] !ml-5 flex items-center pl-7 !pr-2">
+        <div className="col3 w-[40%] !ml-5 flex items-center !pl-7 !pr-2">
          
             <ul className="flex items-center justify-end w-full gap-3">
             {

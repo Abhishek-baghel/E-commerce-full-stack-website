@@ -74,14 +74,14 @@ function App() {
           <Route path="/" element={<Home />} /> 
           <Route path={"/ProductListing"} element={<ProductListing />} /> 
           <Route path="/product/:id" element={<ProductDetails />} />
-<Route path="/login" element={<Login />} />
-<Route path="/register" element={<Register />} />
-<Route path="/cart" element={<CartPage />} />
-<Route path="/checkout" element={<Checkout />} />
-<Route path="/my-list" element={<MyList />} />
-<Route path="/my-account" element={<MyAccount />} />
-<Route path="/verify" element={<Verify />} />
-<Route path="/forgot-password" element={<ForgotPassword />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
+          <Route path="/cart" element={<CartPage />} />
+          <Route path="/checkout" element={<Checkout />} />
+          <Route path="/my-list" element={<MyList />} />
+          <Route path="/my-account" element={<MyAccount />} />
+          <Route path="/verify" element={<Verify />} />
+          <Route path="/forgot-password" element={<ForgotPassword />} />
 
         </Routes>
         <Footer/>
