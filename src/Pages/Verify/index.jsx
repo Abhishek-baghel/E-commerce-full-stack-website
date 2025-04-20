@@ -11,7 +11,7 @@ const Verify = () => {
 
   const verifyOTP = (e) => {
     e.preventDefault();
-    alert(otp); // Just for demo – you can replace this with API integration
+    alert(otp); 
   };
 
   return (
@@ -23,7 +23,7 @@ const Verify = () => {
           </div>
           <h3 className="text-center text-[18px] text-black !mt-4 !mb-1">Verify OTP</h3>
           <p className='text-center !mt-0 !mb-4'>
-            OTP sent to <span className='text-[#ff5252] font-bold'>abhishekbaghel@gmail.com</span>
+            OTP sent to <span className='text-[#ff5252] font-bold'>abhishekbaghel.12b@gmail.com</span>
           </p>
 
           <form onSubmit={verifyOTP}>
