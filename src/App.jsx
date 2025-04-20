@@ -24,6 +24,7 @@ import MyList from "./Pages/MyList";
 import Verify from "./Pages/Verify";
 import toast, { Toaster } from 'react-hot-toast';
 import ForgotPassword from './Pages/ForgotPassword';
+import MyAccount from "./Pages/MyAccount";
 
 
 const MyContext = createContext();
@@ -35,7 +36,7 @@ function App() {
   const [maxWidth, setMaxWidth] = React.useState('lg');
   const [fullWidth, setFullWidth] = React.useState(true);
   const [openCartPanel, setOpenCartPanel] = useState(false);
-  const [isLogin, SetIsLogin] = React.useState(false);
+  const [isLogin, SetIsLogin] = React.useState(true);
 
 
   const handleCloseProductsDetailsModal = () => {
@@ -72,15 +73,16 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} /> 
           <Route path={"/ProductListing"} element={<ProductListing />} /> 
-          <Route path={"/product/:id"} exact={true} element={<ProductDetails/>}/>
-          <Route path={"/login"} exact={true} element={<Login/>}/>
-          <Route path={"/register"} exact={true} element={<Register/>}/>
-          <Route path={"/cart"} exact={true} element={<CartPage/>}/>
-          <Route path={"/checkout"} exact={true} element={<Checkout/>}/>
-          <Route path={"/my-list"} exact={true} element={<MyList/>}/>
-          
-          <Route path={"/verify"} exact={true} element={<Verify/>}/>
-          <Route path={"/forgot-password"} exact={true} element={<ForgotPassword/>}/>
+          <Route path="/product/:id" element={<ProductDetails />} />
+<Route path="/login" element={<Login />} />
+<Route path="/register" element={<Register />} />
+<Route path="/cart" element={<CartPage />} />
+<Route path="/checkout" element={<Checkout />} />
+<Route path="/my-list" element={<MyList />} />
+<Route path="/my-account" element={<MyAccount />} />
+<Route path="/verify" element={<Verify />} />
+<Route path="/forgot-password" element={<ForgotPassword />} />
+
         </Routes>
         <Footer/>
         </MyContext.Provider>
